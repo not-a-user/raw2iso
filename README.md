@@ -22,7 +22,7 @@ raw2iso - Convert raw optical disk images to `.iso` files
 Compiling
 ---------
 
-The tools is a single `.c` file, and should compile and run in all
+The tool is a single `.c` file, and should compile and run in all
 reasonable environments that come with a C99 compiler and standard
 library. If it does not, please file an issue.
 
