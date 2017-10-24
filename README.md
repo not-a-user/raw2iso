@@ -23,10 +23,11 @@ Compiling
 ---------
 
 The tools is a single `.c` file, and should compile and run in all
-reasonable environments that come with a C standard library. If it does
-not, please file an issue.
+reasonable environments that come with a C99 compiler and standard
+library. If it does not, please file an issue.
 
-Windows binaries can be found in the [releases](releases) section.
+Windows binaries can be found in the
+[releases](https://github.com/not-a-user/raw2iso/releases) section.
 
 ### Compiler command line example
 
