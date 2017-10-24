@@ -35,7 +35,10 @@ Windows binaries can be found in the
 cc -o raw2iso raw2iso.c 
 ~~~
 
-### Compile directly from GitHub
+Depending on your compiler version, additional switches such as
+`-std=c99` may be required.
+
+### Compile directly from GitHub - no git clone or tarball required
 
 ~~~
 wget -O - https://raw.githubusercontent.com/not-a-user/raw2iso/master/raw2iso.c | cc -x c -o raw2iso -
@@ -83,7 +86,8 @@ no conversion. These images are `.iso` files.
 
 ### By looking at the file size
 
-If the file size is a multiple of the sector size
+Check if the file size is a multiple of one or more of the following
+sector sizes:
 
 -   2048 bytes: The image might be an `.iso` file.
 -   2324 bytes: Try `MODE2_FORM2`.
