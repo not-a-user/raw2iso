@@ -41,7 +41,7 @@ Depending on your compiler version, additional switches such as
 ### Compile directly from GitHub - no git clone or tarball required
 
 ~~~
-wget -O - https://raw.githubusercontent.com/not-a-user/raw2iso/master/raw2iso.c | cc -x c -o raw2iso -
+curl https://raw.githubusercontent.com/not-a-user/raw2iso/master/raw2iso.c | cc -x c -o raw2iso -
 ~~~
 
 Usage
@@ -78,7 +78,7 @@ no conversion. These images are `.iso` files.
 
 ### If you have an accompanying `.cue` file
 
--	`MODE1/2048`: No conversion is necessary. The image is an `.iso`
+-   `MODE1/2048`: No conversion is necessary. The image is an `.iso`
     file.
 -   `MODE1/2352`: Use `MODE1_RAW`.
 -   `MODE2/2336`: Use `MODE2_FORM_MIX`.

@@ -34,7 +34,7 @@ limitations under the License.
 #	define SET_BINARY_MODE(fd) assert(1)
 #endif
 
-#define RAW2ISO_VERSION "0.0.1"
+#define RAW2ISO_VERSION "0.0.2"
 
 static void usage(char const * argv0)
 {
@@ -52,7 +52,7 @@ static void usage(char const * argv0)
 "WARNING: Error correction/detection data is NOT checked (try\n"
 "https://github.com/claunia/edccchk) and errors are NOT corrected!\n"
 "\n"
-"raw2iso %s\n",
+"raw2iso %s - https://github.com/not-a-user/raw2iso\n",
 	argv0, RAW2ISO_VERSION);
 }
 
@@ -71,7 +71,7 @@ static void parse_args(int const argc, char const * argv[])
 
 	if (argc == 1 || argc > 3) {
 		usage(argv[0]);
-	    exit(EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	} else {
 		char const * const track_mode = argv[1];
 		if (! strcmp("MODE1_RAW", track_mode)) {
