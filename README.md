@@ -55,9 +55,9 @@ raw2iso <track-mode> [<sub-channel-mode>] < INPUT.BIN > OUTPUT.ISO
     `MODE2_FORM1` | `MODE2_FORM2` | `MODE2_FORM_MIX`
 -   `<sub-channel-mode>`: `RW` | `RW_RAW`
 
-**Warning**: Error correction/detection data is **not** checked (try
-[edccchk](https://github.com/claunia/edccchk)) and errors are **not**
-corrected! (Finding this type of errors in an image is unlikely, because
+Note: Error correction/detection data is not checked (try
+[edccchk](https://github.com/claunia/edccchk)) and errors are not
+corrected. (Finding this type of errors in an image is unlikely, because
 [CIRC](https://en.wikipedia.org/wiki/Cross-interleaved_Reed%E2%80%93Solomon_coding)
 detects/corrects errors when reading from the disk.)
 

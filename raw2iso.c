@@ -49,8 +49,8 @@ static void usage(char const * argv0)
 "\n"
 "(See cdrdao(1) -> TOC FILES -> Track Specification -> TRACK.)\n"
 "\n"
-"WARNING: Error correction/detection data is NOT checked (try\n"
-"https://github.com/claunia/edccchk) and errors are NOT corrected!\n"
+"Note: Error correction/detection data is not checked (try\n"
+"https://github.com/claunia/edccchk) and errors are not corrected.\n"
 "\n"
 "raw2iso %s - https://github.com/not-a-user/raw2iso\n",
 	argv0, RAW2ISO_VERSION);
