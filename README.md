@@ -22,9 +22,9 @@ raw2iso - Convert raw optical disk images to `.iso` files
 Compiling
 ---------
 
-The tool is a single `.c` file, and should compile and run in all
-reasonable environments that come with a C99 compiler and standard
-library. If it does not, please file an issue.
+The tool is contained in a single `.c` file, and should compile and
+run in any reasonable environment that comes with a C99 compiler and
+standard library. If it does not, please file an issue.
 
 Windows binaries can be found in the
 [releases](https://github.com/not-a-user/raw2iso/releases) section.
@@ -32,7 +32,7 @@ Windows binaries can be found in the
 ### Compiler command line example
 
 ~~~
-cc -o raw2iso raw2iso.c 
+cc -o raw2iso raw2iso.c
 ~~~
 
 Depending on your compiler version, additional switches such as
@@ -55,11 +55,12 @@ raw2iso <track-mode> [<sub-channel-mode>] < INPUT.BIN > OUTPUT.ISO
     `MODE2_FORM1` | `MODE2_FORM2` | `MODE2_FORM_MIX`
 -   `<sub-channel-mode>`: `RW` | `RW_RAW`
 
-Note: Error correction/detection data is not checked (try
+**Note**: Error correction/detection data is not checked (try
 [edccchk](https://github.com/claunia/edccchk)) and errors are not
-corrected. (Finding this type of errors in an image is unlikely, because
+corrected. (It is unlikely that an image contains this type of errors,
+because
 [CIRC](https://en.wikipedia.org/wiki/Cross-interleaved_Reed%E2%80%93Solomon_coding)
-detects/corrects errors when reading from the disk.)
+detects/corrects errors when reading from the disk - even in raw mode.)
 
 How to determine the image type (track mode and sub-channel mode)
 -----------------------------------------------------------------
@@ -73,7 +74,7 @@ The track mode and sub-channel mode can be found in the `.toc` file. See
 [cdrdao(1)](https://linux.die.net/man/1/cdrdao) -> TOC FILES ->
 Track Specification -> TRACK.
 
-**Note:** `MODE1` and `MODE2_FORM1` images without sub-channel data need
+**Note**: `MODE1` and `MODE2_FORM1` images without sub-channel data need
 no conversion. These images are `.iso` files.
 
 ### If you have an accompanying `.cue` file
